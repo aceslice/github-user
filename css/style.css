@@ -25,7 +25,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 .details {
@@ -185,6 +184,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 25px;
   margin-bottom: 40px;
   -ms-flex-wrap: wrap;
@@ -208,7 +210,7 @@ a {
 }
 
 .container .main .contents .follow .count .num {
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 5px;
   color: var(--primary-color);
 }
@@ -219,11 +221,11 @@ a {
 }
 
 .container .main .contents .buttons {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 16px;
 }
 
 .container .main .contents .buttons button {
@@ -240,11 +242,14 @@ a {
 }
 
 .container .main .contents .buttons .profile {
-  color: var(--bg);
   background-color: var(--primary-color);
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+.container .main .contents .buttons .profile a {
+  color: var(--bg);
 }
 
 .container .main .contents .buttons .twitter {

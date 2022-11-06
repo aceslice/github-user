@@ -21,7 +21,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #fff;
+
 }
 .details {
   width: 600px;
@@ -130,6 +130,7 @@ a {
       .follow {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 25px;
         margin-bottom: 40px;
         flex-wrap:wrap ;
@@ -139,7 +140,7 @@ a {
           justify-content: space-evenly;
           flex-direction: column;
           .num {
-            font-size: 26px;
+            font-size: 28px;
             margin-bottom: 5px;
             color: var(--primary-color);
           }
@@ -150,9 +151,9 @@ a {
         }
       }
       .buttons {
-        width: 80%;
+        width: 90%;
         display: flex;
-        gap: 10px;
+        gap: 16px;
         button {
           display: block;
           cursor: pointer;
@@ -166,14 +167,16 @@ a {
           }
         }
         .profile {
-          color: var(--bg);
+          a{
+            color: var(--bg);
+          }
+        
           background-color: var(--primary-color);
           flex: 2;
         }
         .twitter {
           background-color: var(--bg);
           color: var(--primary-color);
-
           flex: 1;
         }
       }
@@ -218,7 +221,6 @@ a {
     }
     .follow{
       width: 100%;
-
     }
   }
 }
