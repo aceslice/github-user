@@ -26,7 +26,6 @@ search.addEventListener("submit", (e) => {
       }else{
          document.querySelector(".twitter").style.display = "block";
       }
-      input.length = 0;
     })
     .catch((err) => {
       console.log(err.message);
