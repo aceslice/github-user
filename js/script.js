@@ -33,6 +33,7 @@ function showResults(val) {
   }
   res.innerHTML = `<ul>${list}</ul>`;
 }
+const search = document.querySelector(".search");
 fetchData = () => {
   document.querySelector(".container").style.display = "block";
   const input = document.getElementById("input").value;
