@@ -12,8 +12,9 @@
 
     <!-- Topnav container -->
     <div class="topnav">
-      <form class="search">
+      <form class="search" autocomplete="off">
         <input
+        onKeyUp="showResults(this.value)"
           type="text"
           placeholder="Search @user"
           aria-label="search"
@@ -22,6 +23,7 @@
         />
         <button class="submit-btn" type="submit">Search</button>
       </form>
+      <div id="result"></div>
     </div>
     <div class="details">
       <h1>Welcome to Github User</h1>
@@ -78,6 +80,11 @@
         </section>
       </div>
     </div>
+
+    <form autocomplete="off" class="search">
+      <input type="text" name="q" id="q" onKeyUp="showResults(this.value)" class="input"/>
+      <div id="result"></div>
+    </form>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -52,6 +52,10 @@ a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin-bottom: 40px;
   background: #fff;
@@ -68,6 +72,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .topnav .search button {
@@ -96,6 +101,29 @@ a {
 
 .topnav .search input:focus {
   border: 2px solid lightgray;
+}
+
+.topnav #result {
+  -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  max-height: 200px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.topnav #result ul {
+  list-style-type: none;
+}
+
+.topnav #result ul .app {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.topnav #result ul .app:hover {
+  background: var(--bg);
+  color: var(--primary-color);
 }
 
 .container {
@@ -169,6 +197,7 @@ a {
 
 .container .main .contents .texts .username {
   color: var(--head);
+  font-size: 16px;
 }
 
 .container .main .contents .texts .bio {
@@ -270,6 +299,9 @@ a {
   }
   .topnav .search input {
     height: 60px;
+  }
+  .topnav #result {
+    width: 100%;
   }
   .details {
     width: 100%;
