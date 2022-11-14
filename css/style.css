@@ -103,29 +103,6 @@ a {
   border: 2px solid lightgray;
 }
 
-.topnav #result {
-  -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-  width: 450px;
-  max-height: 200px;
-  border-radius: 10px;
-  overflow-y: scroll;
-}
-
-.topnav #result ul {
-  list-style-type: none;
-}
-
-.topnav #result ul .app {
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.topnav #result ul .app:hover {
-  background: var(--bg);
-  color: var(--primary-color);
-}
-
 .container {
   display: none;
   -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
@@ -299,9 +276,6 @@ a {
   }
   .topnav .search input {
     height: 60px;
-  }
-  .topnav #result {
-    width: 100%;
   }
   .details {
     width: 100%;
