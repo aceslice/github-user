@@ -203,11 +203,11 @@ a {
   }
   .container {
     width: 100%;
-    padding: 15px;
   }
   .container .main {
     width: 100%;
     flex-wrap: wrap;
+    padding: 15px;
   }
   .container .main .contents .texts .bio {
     width: 100%;
