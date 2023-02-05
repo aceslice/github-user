@@ -195,6 +195,7 @@ a {
   }
   .topnav .search input {
     height: 60px;
+    width: 100%;
   }
   .details {
     width: 100%;
@@ -208,6 +209,8 @@ a {
   .container .main {
     width: 100%;
     flex-wrap: wrap;
+  }
+  .container .main .contents {
     padding: 15px;
   }
   .container .main .contents .texts .bio {

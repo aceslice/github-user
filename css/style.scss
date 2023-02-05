@@ -192,6 +192,7 @@ a {
       width: 100%;
       input {
         height: 60px;
+        width: 100%;
       }
     }
   }
@@ -206,10 +207,10 @@ a {
     .main {
       width: 100%;
       flex-wrap: wrap;
-      padding: 15px;
-
       .contents {
+        padding: 15px;
         .texts {
+         
           .bio {
             width: 100%;
           }
