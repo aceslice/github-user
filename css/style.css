@@ -10,8 +10,7 @@ html {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Sora", var(--font);
@@ -34,7 +33,6 @@ a {
   margin-top: 40px;
   text-align: center;
 }
-
 .details img {
   padding-top: 50px;
   width: 500px;
@@ -44,37 +42,22 @@ a {
 }
 
 .topnav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 40px;
   background: #fff;
   padding-top: 40px;
-  -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
-
 .topnav .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   margin-bottom: 10px;
 }
-
 .topnav .search button {
   height: 70%;
   width: 100px;
@@ -86,7 +69,6 @@ a {
   border-radius: 25px;
   cursor: pointer;
 }
-
 .topnav .search input {
   width: 500px;
   height: 32px;
@@ -94,176 +76,116 @@ a {
   border: 2px solid #f9f9f9;
   outline: none;
   border-radius: 25px;
-  -webkit-transition: 200ms ease;
   transition: 200ms ease;
   font-size: 15px;
 }
-
 .topnav .search input:focus {
   border: 2px solid lightgray;
 }
 
 .container {
   display: none;
-  -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
   width: 1000px;
   background: var(--filler);
   border-radius: 10px;
   overflow: hidden;
   margin: 0 auto;
-  -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   padding: 25px;
 }
-
 .container .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   gap: 40px;
 }
-
 .container .main .img-container {
   width: 100%;
   height: 100%;
 }
-
 .container .main .img-container img {
   border-radius: 5px;
   width: 100%;
   height: 100%;
 }
-
 .container .main .contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .container .main .contents .texts {
   margin-bottom: 40px;
 }
-
 .container .main .contents .texts .user {
   color: var(--text-color);
   font-size: 30px;
 }
-
 .container .main .contents .texts .other {
   font-size: 13px;
   margin-bottom: 16px;
   color: var(--head);
 }
-
 .container .main .contents .texts .username {
   color: var(--head);
   font-size: 16px;
 }
-
 .container .main .contents .texts .bio {
   color: var(--head);
   width: 500px;
   margin-bottom: 8px;
 }
-
 .container .main .contents .follow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
   margin-bottom: 40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .container .main .contents .follow .count {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-
 .container .main .contents .follow .count .num {
   font-size: 28px;
   margin-bottom: 5px;
   color: var(--primary-color);
 }
-
 .container .main .contents .follow .count p {
   font-size: 15px;
   color: var(--head);
 }
-
 .container .main .contents .buttons {
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
-
 .container .main .contents .buttons button {
   display: block;
   cursor: pointer;
-  height: 50px;
+  height: 40px;
   width: 130px;
   border: none;
   border-radius: 25px;
 }
-
 .container .main .contents .buttons button:focus, .container .main .contents .buttons button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 .container .main .contents .buttons .profile {
   background-color: var(--primary-color);
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
 }
-
 .container .main .contents .buttons .profile a {
   color: var(--bg);
 }
-
 .container .main .contents .buttons .twitter {
   background-color: var(--bg);
   color: var(--primary-color);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 767px) {
@@ -288,8 +210,7 @@ a {
   }
   .container .main {
     width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .container .main .contents .texts .bio {
     width: 100%;
@@ -300,5 +221,4 @@ a {
   .container .follow {
     width: 100%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
